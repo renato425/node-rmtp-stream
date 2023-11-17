@@ -1,0 +1,29 @@
+{
+  "name": "node-rmtp-stream",
+  "version": "0.0.1-beta",
+  "description": "Node-RMTP-Stream is a Node.js library that provides a simple way to stream videos to RMTP servers with NodeJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renato425/node-rmtp-stream.git"
+  },
+  "keywords": [
+    "rmtp",
+    "stream",
+    "youtube",
+    "twitch"
+  ],
+  "author": "Renato (contatoclash6@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/renato425/node-rmtp-stream/issues"
+  },
+  "homepage": "https://github.com/renato425/node-rmtp-stream#readme",
+  "dependencies": {
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}
