@@ -13,8 +13,20 @@ pnpm install node-rmtp-stream
 
 ## Uso
 Para começar a usar a biblioteca, importe o `StreamBuilder` e crie uma nova instância fornecendo o caminho do vídeo que você deseja transmitir.
+#### Usando com JS:
 ```js
 const { StreamBuilder } = require('node-rmtp-stream')
+const stream = new StreamBuilder('./video.mp4')
+.streamLoop()
+.quality('high')
+.onStart(() => {
+    //Função que executará ao iniciar a stream.
+})
+.stream('RMTP_KEY')
+```
+#### Usando com TS:
+```ts
+import StreamBuilder from 'node-rmtp-stream'
 const stream = new StreamBuilder('./video.mp4')
 .streamLoop()
 .quality('high')
@@ -56,15 +68,27 @@ pnpm install node-rmtp-stream
 ## Usage
 To start using the library, import `StreamBuilder` and create a new instance by providing the path of the video you want to stream.
 
-```javascript
-const { StreamBuilder } = require('node-rmtp-stream');
+#### Using with JS:
+```js
+const { StreamBuilder } = require('node-rmtp-stream')
 const stream = new StreamBuilder('./video.mp4')
-  .streamLoop()
-  .quality('high')
-  .onStart(() => {
-    // Function to execute when the stream starts.
-  })
-  .stream('RMTP_KEY');
+.streamLoop()
+.quality('high')
+.onStart(() => {
+    //Função que executará ao iniciar a stream.
+})
+.stream('RMTP_KEY')
+```
+#### Using with TS:
+```ts
+import StreamBuilder from 'node-rmtp-stream'
+const stream = new StreamBuilder('./video.mp4')
+.streamLoop()
+.quality('high')
+.onStart(() => {
+    //Função que executará ao iniciar a stream.
+})
+.stream('RMTP_KEY')
 ```
 
 ## Methods
