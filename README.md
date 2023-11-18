@@ -2,6 +2,8 @@
 # Node-RMTP-Stream
 O Node-RMTP-Stream é uma biblioteca para NodeJS que oferece uma maneira simples de transmitir vídeos para servidores RMTP com NodeJS.
 
+Suporta Typescript, CommonJS e ECMAScript
+
 ### Necessário: FFMPEG
 
 ## Instalação
@@ -13,6 +15,7 @@ pnpm install node-rmtp-stream
 
 ## Uso
 Para começar a usar a biblioteca, importe o `StreamBuilder` e crie uma nova instância fornecendo o caminho do vídeo que você deseja transmitir.
+
 #### Usando com JS:
 ```js
 const { StreamBuilder } = require('node-rmtp-stream')
@@ -55,6 +58,8 @@ Função que o Node executará quando a transmissão terminar.
 # Node-RMTP-Stream
 
 Node-RMTP-Stream is a Node.js library that provides a simple way to stream videos to RMTP servers with NodeJS.
+
+Supports Typescript, CommonJS and ECMAScript
 
 ### Requirement: FFMPEG
 
